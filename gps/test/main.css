@@ -1,0 +1,1218 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+
+  h1, h2, h3, h4, h5 ,h6{
+    font-weight: 200;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  p, li, a{
+    font-size: 14px;
+  }
+
+  fieldset{
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  /* GRID */
+
+  .twelve { width: 100%; }
+  .eleven { width: 91.53%; }
+  .ten { width: 83.06%; }
+  .nine { width: 74.6%; }
+  .eight { width: 66.13%; }
+  .seven { width: 57.66%; }
+  .six { width: 49.2%; }
+  .five { width: 40.73%; }
+  .four { width: 32.26%; }
+  .three { width: 23.8%; }
+  .two { width: 15.33%; }
+  .one { width: 6.866%; }
+
+  /* COLUMNS */
+
+  .col {
+      display: block;
+      float:left;
+      margin: 0 0 0 1.6%;
+  }
+
+  .col:first-of-type {
+    margin-left: 0;
+  }
+
+  .container{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .row{
+    padding: 5px 0;
+  }
+
+  /* CLEARFIX */
+
+  .cf:before,
+  .cf:after {
+      content: " ";
+      display: table;
+  }
+
+  .cf:after {
+      clear: both;
+  }
+
+  .cf {
+      *zoom: 1;
+  }
+
+  .wrapper{
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  /* STEPS */
+
+  /*steps backup*/
+  .steps{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    text-align: center;
+  }
+  /* Media queries conjuntos (overlay.css(50aprox) y main.css(97aprox) */
+  /* XTRA LARGE */
+  @media (min-width: 1200px){
+      .steps{
+        width:421px;
+        list-style-type: none;
+        margin-left: -330px;
+        margin-top:110px;
+        padding: 0;
+        background-color: #fff;
+        text-align: center;
+      }
+  }
+   /* LARGE */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+      .steps{
+        width:421px;
+        list-style-type: none;
+        margin-left: -235px;
+        margin-top:110px;
+        padding: 0;
+        background-color: #fff;
+        text-align: center;
+      }
+  }
+   /* MEDIUM */
+   @media (min-width: 768px) and (max-width: 991.98px){
+    .steps{
+      width:401px;
+      list-style-type: none;
+      margin-left: -125px;
+      margin-top:110px;
+      padding: 0;
+      background-color: #fff;
+      text-align: center;
+    }
+   }
+
+
+  .steps li{
+    display: inline-block;
+    margin: 20px;
+    color: #ccc;
+    padding-bottom: 5px;
+  }
+
+  .steps li.is-active{
+    border-bottom: 1px solid #3498db;
+    color: #3498db;
+  }
+
+  /* FORM */
+
+  .form-wrapper .section{
+    padding: 0px 20px 30px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+    opacity: 0;
+    -webkit-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+    -moz-transform-origin: top center;
+    -ms-transform-origin: top center;
+    -o-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    min-height: 460px;
+  }
+
+  .form-wrapper .section h3{
+    margin-bottom: 30px;
+  }
+
+  .form-wrapper .section.is-active{
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+
+
+
+  .form-wrapper .submit{
+    border: none;
+    outline: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .form-wrapper input[type="text"],
+  .form-wrapper input[type="password"]{
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #f1f1f1;
+    border: none;
+    width: 50%;
+    outline: none;
+    font-size: 14px !important;
+    font-family: 'Open Sans', sans-serif !important;
+  }
+
+  .form-wrapper input[type="radio"]{
+    display: none;
+  }
+
+  .form-wrapper input[type="radio"] + label{
+    display: block;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 100%;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+
+  }
+
+  .form-wrapper input[type="radio"] + label:before{
+    content: "✔";
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 100%;
+    background-color: #3498db;
+    /*color: #fff;*/
+    display: none;
+  }
+
+  .form-wrapper input[type="radio"]:checked + label:before{
+    display: block;
+  }
+
+  .form-wrapper input[type="radio"] + label h4{
+    margin: 15px;
+    color: rgba(0, 0, 0, 0.726);
+  }
+
+  .form-wrapper input[type="radio"]:checked + label{
+    border: 1px solid #3498db;
+  }
+
+  .form-wrapper input[type="radio"]:checked + label h4{
+    color: #3498db;
+  }
+
+
+   /** AÑADIENDO Y MODIFICANDO EN EL STEP 1**/
+
+
+   /* Doing step one with inputs instead of buttons*/
+
+   html body div.container div.wrapper form.form-wrapper fieldset.section.is-active div.row div.twelve.col label{
+
+        padding:0px;
+
+  }
+
+
+
+   */
+
+
+   #button1{
+        margin-right: 28px;
+        margin-bottom: 245px;
+        width:80%;
+        box-shadow: inset 0 1px 1px #aaa;
+        border-radius: 1.2em;
+        border: 1px solid #ddd;
+        color: #545356;
+        text-align: center;
+        padding:10px;
+
+    }
+    #button2{
+        margin-right: 28px;
+        margin-bottom: 205px;
+        width:80%;
+        border-radius: 1.2em;
+        border: 1px solid #ddd;
+        color: #545356;
+        text-align: center;
+        box-shadow: inset 0 1px 1px #aaa;
+    }
+    #button3{
+        margin-right: 28px;
+        margin-bottom: 165px;
+        width:80%;
+        border-radius: 1.2em;
+        border: 1px solid #ddd;
+        color: #545356;
+        text-align: center;
+        box-shadow: inset 0 1px 1px #aaa;
+    }
+    #button4{
+        margin-right: 28px;
+        margin-bottom: 125px;
+        width:80%;
+        border-radius: 1.2em;
+        border: 1px solid #ddd;
+        color: #545356;
+        text-align: center;
+        box-shadow: inset 0 1px 1px #aaa;
+    }
+    #button5{
+        margin-right: 28px;
+        margin-bottom: 85px;
+        width:80%;
+        border-radius: 1.2em;
+        border: 1px solid #ddd;
+        color: #545356;
+        text-align: center;
+        box-shadow: inset 0 1px 1px #aaa;
+    }
+    /** AÑADIENDO Y MODIFICANDO EN EL STEP 2**/
+
+    #buttonC{
+
+        box-shadow: 1px 2px 2px #bababa;
+        padding: 1em 2em;
+        font-size: 1.5em;
+        margin-bottom: .6em;
+        border-radius: .8em;
+    }
+    #buttonD{
+
+      box-shadow: 1px 2px 2px #bababa;
+      padding: 1em 2em;
+      font-size: 1.5em;
+      margin-bottom: .6em;
+      border-radius: .8em;
+  }
+  #buttonE{
+
+    box-shadow: 1px 3px 5px #bababa;
+    padding: 1em 2em;
+    font-size: 1.5em;
+    margin-bottom: .6em;
+    border-radius: .8em;
+}
+#buttonA{
+  box-shadow: 1px 3px 5px #bababa;
+  padding: 1em 2em;
+  font-size: 1.5em;
+  margin-bottom: .6em;
+  border-radius: .8em;
+}
+#buttonA1{
+  box-shadow: 1px 3px 5px #bababa;
+  padding: 1em 2em;
+  font-size: 1.5em;
+  margin-bottom: .6em;
+  border-radius: .8em;
+}
+#buttonA2{
+  box-shadow: 1px 3px 5px #bababa;
+  padding: 1em 2em;
+  font-size: 1.5em;
+  margin-bottom: .6em;
+  border-radius: .8em;
+}
+#buttonA3{
+  box-shadow: 1px 3px 5px #bababa;
+  padding: 1em 2em;
+  font-size: 1.5em;
+  margin-bottom: .6em;
+  border-radius: .8em;
+}
+#buttonA4{
+  box-shadow: 1px 3px 5px #bababa;
+  padding: 1em 2em;
+  font-size: 1.5em;
+  margin-bottom: .6em;
+  border-radius: .8em;
+}
+.buttonInfo{
+  margin-top: 5px;
+  background-color: #01336d;
+  font-family: 'Josefin Slab', serif;
+  box-shadow: 0px 1px 2px rgb(138, 138, 221);
+  padding: 1em 2em;
+  color:white;
+  margin-bottom: .6em;
+  border-radius: .8em;
+  font-family: Helvetica;
+}
+.buttonInfo:hover{
+  box-shadow: 1px 3px 5px rgb(138, 138, 221);
+  color:cyan;
+  transition: 0.4s;
+}
+.buttonAtravesar{
+
+    margin-top: 5px;
+    background: #01336d;
+    font-family: 'Josefin Slab', serif;
+    box-shadow: 0px 1px 2px rgb(138, 138, 221);
+    padding: 1em 2em;
+    color:rgb(255, 255, 255);
+    margin-bottom: .6em;
+    border-radius: .8em;
+    font-family: Helvetica;
+
+}
+
+.form-wrapper button:disabled,
+.form-wrapper button[disabled]{
+  border: 1px solid #999999;
+  background: #777777;
+  color: #666666;
+}
+
+.form-wrapper .button, .form-wrapper .submit{
+
+  display: inline-block;
+  padding: 8px 30px;
+  color: #ccc;
+  background: #01336d;
+  cursor: pointer;
+  font-size: 14px !important;
+  font-family: 'Open Sans', sans-serif !important;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+/*
+#back2{
+  display: inline-block;
+  padding: 15px 30px;
+  color: #ccc;
+  background: #01346dbb;
+  cursor: pointer;
+  font-size: 14px !important;
+  font-family: 'Open Sans', sans-serif !important;
+  position: absolute;
+  right: 110px;
+  top: 373px;
+
+  box-shadow: 1px 2px 2px #bababa;
+
+  margin-bottom: .6em;
+  border-radius: .8em;
+}
+*/
+#back2{
+  display: inline-block;
+
+  color: #ccc;
+  background: #01336d;
+  cursor: pointer;
+  font-size: 14px !important;
+  font-family: 'Open Sans', sans-serif !important;
+  position: absolute;
+  right: 155px;
+  bottom: 20px;
+
+  box-shadow: 1px 2px 2px #bababa;
+  padding: 1em 2em;
+  font-size: 1em;
+  margin-bottom: .6em;
+  border-radius: .8em
+}
+    /** AÑADIENDO Y MODIFICANDO EN EL STEP 4; CÓDIGO POSTAL**/
+
+    html body div.container div.wrapper form.form-wrapper fieldset.section.is-active input#postalCode{
+        width:80%;
+        padding:14px;
+        border-radius: .5em;
+    }
+    .move{
+        position: absolute;
+        margin-left: -132px;
+        margin-top: 8px;
+    }
+    html body div.container div.wrapper form.form-wrapper fieldset.section.is-active input#postalCode:focus{
+        border: 1px solid blue;
+    }
+
+    /** AÑADIENDO Y MODIFICANDO EN EL STEP 5; NOMBRE**/
+    html body div.container div.wrapper form.form-wrapper fieldset.section.is-active input#nombre{
+        width:80%;
+        padding:14px;
+        border-radius: .5em;
+    }
+    html body div.container div.wrapper form.form-wrapper fieldset.section.is-active input#nombre:focus{
+        border: 1px solid blue;
+    }
+    /** AÑADIENDO Y MODIFICANDO EN EL STEP 6; NEGOCIO**/
+
+    html body div.container div.wrapper form.form-wrapper fieldset.section.is-active input#negocio{
+            width:80%;
+            padding:14px;
+            border-radius: .5em;
+    }
+    html body div.container div.wrapper form.form-wrapper fieldset.section.is-active input#negocio:focus{
+            border: 1px solid blue;
+    }
+/** AÑADIENDO Y MODIFICANDO EN EL STEP 7; EMAIL**/
+
+    html body div.container div.wrapper form.form-wrapper fieldset.section.is-active input#correo{
+            width:80%;
+            padding:14px;
+            border-radius: .5em;
+    }
+    html body div.container div.wrapper form.form-wrapper fieldset.section.is-active input#correo:focus{
+            border: 1px solid blue;
+    }
+/** AÑADIENDO Y MODIFICANDO EN EL STEP 8; TELÉFONO**/
+
+html body div.container div.wrapper form.form-wrapper fieldset.section.is-active input#telefono{
+    width:80%;
+    padding:14px;
+    border-radius: .5em;
+}
+html body div.container div.wrapper form.form-wrapper fieldset.section.is-active input#telefono:focus{
+    border: 1px solid blue;
+}
+
+/* xxxlarge */
+@media (min-width: 1559px){
+      .parallax, .parallax2 {
+        height:530px;
+      }
+
+         /* JOSEJI comment*/
+
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.joseJi h5{
+  font-size:26px;
+  color:#f7f7f7;
+   font-family: Helvetica;
+   font-weight: 900;
+}
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.joseJi p{
+  font-size:20px;
+  color:#f7f7f7;
+   font-family: Helvetica;
+   font-weight: 900;
+}
+/* AlbertoCo comment */
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.albertoCo h5{
+  font-size:26px;
+  color:white;
+  font-weight: 900;
+   font-family: Helvetica;
+}
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.albertoCo p{
+  font-size:20px;
+  color:white;
+  font-weight: 900;
+   font-family: Helvetica;
+}
+
+/* felipeVi comment*/
+
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.felipeVi h5{
+  font-size:26px;
+  color:white;
+  font-weight: 900;
+  font-family: Helvetica;
+}
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.felipeVi p{
+  font-size:20px;
+  color:white;
+  font-weight: 900;
+   font-family: Helvetica;
+}
+
+        html body div.parallax2 div.wrapper div.row div.col.col-8{
+          margin-top:14%;
+        }
+        html body div.parallax div.container-fluid div.wrapper div.row.sexi div.col{
+          margin-top:60px;
+        }
+        html body div.parallax2 div.container-fluid div.wrapper div.row div#toptexts.col.col-xl-3.col-lg-3.col-sm-5.toptexts{
+          margin-top:75px;
+        }
+        .atravesar{
+          left:44%;
+        }
+
+        #footerOfMine{
+
+          margin-top:-68px;
+
+        }
+        .wide{
+          width:112%;
+        }
+        /*Comentarios carousel*/
+        /*felipeVi*/
+        html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.felipeVi{
+          margin-bottom: 192px;
+         }
+         /*albertoCo*/
+         html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.albertoCo{
+          margin-bottom:186px;
+        }
+        /*joseJi*/
+        html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.joseJi{
+          margin-bottom: 198px;
+        }
+        .sakura{
+          background-image: url(img/movilXXXtraLarge.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+
+
+
+     }
+/* Raul le mete al autista */
+    @media (min-width: 1201px)and (max-width: 1558,99px){
+          .parallax, .parallax2 {
+            height:530px;
+          }
+
+             /* JOSEJI comment*/
+
+    html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.joseJi h5{
+      font-size:26px;
+      color:#f7f7f7;
+       font-family: Helvetica;
+       font-weight: 900;
+    }
+    html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.joseJi p{
+      font-size:20px;
+      color:#f7f7f7;
+       font-family: Helvetica;
+       font-weight: 900;
+    }
+    /* AlbertoCo comment */
+    html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.albertoCo h5{
+      font-size:26px;
+      color:white;
+      font-weight: 900;
+       font-family: Helvetica;
+    }
+    html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.albertoCo p{
+      font-size:20px;
+      color:white;
+      font-weight: 900;
+       font-family: Helvetica;
+    }
+
+    /* felipeVi comment*/
+
+    html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.felipeVi h5{
+      font-size:26px;
+      color:white;
+      font-weight: 900;
+      font-family: Helvetica;
+    }
+    html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.felipeVi p{
+      font-size:20px;
+      color:white;
+      font-weight: 900;
+       font-family: Helvetica;
+    }
+
+            html body div.parallax2 div.wrapper div.row div.col.col-8{
+              margin-top:14%;
+            }
+            html body div.parallax div.container-fluid div.wrapper div.row.sexi div.col{
+              margin-top:60px;
+            }
+            html body div.parallax2 div.container-fluid div.wrapper div.row div#toptexts.col.col-xl-3.col-lg-3.col-sm-5.toptexts{
+              margin-top:75px;
+            }
+            .atravesar{
+              left:44%;
+            }
+
+            #footerOfMine{
+
+              margin-top:-68px;
+
+            }
+            .wide{
+              width:112%;
+            }
+            /*Comentarios carousel*/
+            /*felipeVi*/
+            html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.felipeVi{
+              margin-bottom: 192px;
+             }
+             /*albertoCo*/
+             html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.albertoCo{
+              margin-bottom:186px;
+            }
+            /*joseJi*/
+            html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.joseJi{
+              margin-bottom: 198px;
+            }
+            .sakura{
+              background-image: url(img/movilXXtraLarge.jpg);
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+
+
+
+         }
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px){
+      .parallax, .parallax2 {
+        height:530px;
+      }
+
+         /* JOSEJI comment*/
+
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.joseJi h5{
+  font-size:26px;
+  color:#f7f7f7;
+   font-family: Helvetica;
+   font-weight: 900;
+}
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.joseJi p{
+  font-size:20px;
+  color:#f7f7f7;
+   font-family: Helvetica;
+   font-weight: 900;
+}
+/* AlbertoCo comment */
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.albertoCo h5{
+  font-size:26px;
+  color:white;
+  font-weight: 900;
+   font-family: Helvetica;
+}
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.albertoCo p{
+  font-size:20px;
+  color:white;
+  font-weight: 900;
+   font-family: Helvetica;
+}
+
+/* felipeVi comment*/
+
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.felipeVi h5{
+  font-size:26px;
+  color:white;
+  font-weight: 900;
+  font-family: Helvetica;
+}
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.felipeVi p{
+  font-size:20px;
+  color:white;
+  font-weight: 900;
+   font-family: Helvetica;
+}
+
+        html body div.parallax2 div.wrapper div.row div.col.col-8{
+          margin-top:14%;
+        }
+        html body div.parallax div.container-fluid div.wrapper div.row.sexi div.col{
+          margin-top:60px;
+        }
+        html body div.parallax2 div.container-fluid div.wrapper div.row div#toptexts.col.col-xl-3.col-lg-3.col-sm-5.toptexts{
+          margin-top:75px;
+        }
+        .atravesar{
+          left:44%;
+        }
+
+        #footerOfMine{
+
+          margin-top:-68px;
+
+        }
+        .wide{
+          width:112%;
+        }
+        /*Comentarios carousel*/
+        /*felipeVi*/
+        html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.felipeVi{
+          margin-bottom: 192px;
+         }
+         /*albertoCo*/
+         html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.albertoCo{
+          margin-bottom:186px;
+        }
+        /*joseJi*/
+        html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.joseJi{
+          margin-bottom: 198px;
+        }
+        .sakura{
+          background-image: url(img/movilXtraLarge.jpg);
+          background-repeat: no-repeat;
+          background-size: 78% 100%;
+        }
+
+
+
+     }
+     /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+        html body div.parallax2 div.wrapper div.row div.col.col-8{
+          margin-top:25%;
+        }
+        html body div.parallax div.container-fluid div.wrapper div.row.sexi div.col{
+          margin-top:30px;
+        }
+        html body div.parallax2 div.container-fluid div.wrapper div.row div#toptexts.col.col-xl-3.col-lg-3.col-sm-5.toptexts{
+          margin-top:100px;
+        }
+
+        .atravesar{
+          left:42%;
+        }
+        html body div.parallax2 div.container-fluid div.wrapper div.row div#toptexts.col.col-lg-4.toptexts{
+          margin-top:40px;
+        }
+        #footerOfMine{
+
+          margin-top:-66px;
+
+        }
+        /* Comentarios carousel */
+        /*joseLi*/
+        html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.d-none.d-lg-block.joseJi{
+          margin-bottom: 180px;
+        }
+        /*albertoCo*/
+        html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.d-none.d-lg-block.albertoCo{
+          margin-bottom: 150px;
+        }
+        /*felipeVi*/
+        html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.d-none.d-lg-block.felipeVi{
+          margin-bottom: 140px;
+        }
+        /* CAROUSEL PROCCESS*/
+      /* JOSEJI comment*/
+
+      html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.joseJi h5{
+        font-size:22px;
+        color:#f7f7f7;
+        font-family: Helvetica;
+        font-weight: 900;
+      }
+      html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.joseJi p{
+        font-size:16px;
+        color:#f7f7f7;
+        font-family: Helvetica;
+        font-weight: 900;
+      }
+      /* AlbertoCo comment */
+      html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.albertoCo h5{
+        font-size:22px;
+        color:white;
+        font-weight: 900;
+        font-family: Helvetica;
+      }
+      html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.albertoCo p{
+        font-size:16px;
+        color:white;
+        font-weight: 900;
+        font-family: Helvetica;
+      }
+
+      /* felipeVi comment*/
+
+      html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.felipeVi h5{
+        font-size:22px;
+        color:white;
+        font-weight: 900;
+        font-family: Helvetica;
+      }
+      html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.felipeVi p{
+        font-size:16px;
+        color:white;
+        font-weight: 900;
+        font-family: Helvetica;
+      }
+      .sakura{
+        background-image: url(img/movilLarge.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+
+
+
+ }
+ /*Supuestos medios
+   MEDIUM */
+ @media (min-width: 768px) and (max-width: 991.98px) {
+    html body div.parallax2 div.container-fluid div.wrapper div.row div#toptexts.col.col-xl-3.col-lg-3.col-sm-5.toptexts.col-5{
+      margin-top:65px;
+    }
+    html body div.parallax div.container-fluid div.wrapper div.row.sexi div#toptexts2.col.col-xl-3.col-lg-3.col-sm-5.toptexts2.col-5{
+      margin-top:65px;
+    }
+    .sakura{
+      background-image: url(img/movilMedium.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+    /* mediumHIGH devices (custom)) */
+ @media (min-width: 871.79px) and (max-width:991.98px) {
+
+    html body div.parallax2 div.container-fluid div.wrapper div.row div#toptexts.col.col-xl-3.col-lg-3.col-sm-5.toptexts.col-7{
+      margin-top:55px;
+    }
+    html body div.parallax div.container-fluid div.wrapper div.row.sexi div#toptexts2.col.col-xl-3.col-lg-3.col-sm-5.toptexts2.col-7{
+      margin-top:55px;
+    }
+
+    html body div.parallax2 div.wrapper div.row div.col.col-8{
+      margin-top:25%;
+    }
+
+
+    .atravesar{
+      left:40%;
+    }
+    #footerOfMine{
+
+      margin-top:-70px;
+
+    }
+
+
+
+
+
+ }
+
+
+
+
+
+ /*MEDIAS LOCOS POR PEO LADILLA EN VIEWPORT AL CUAL NO TENGO ACCESO*/
+ @media (min-width: 568.7px) {
+   #jodedor{
+    margin-left: -25px;
+   }
+ }
+ @media (max-width: 767px) {
+  #jodedor{
+   margin-left: -24px;
+   width:105.5%;
+  }
+
+}
+@media only screen and (max-width: 568.5px) {
+  #jodedor{
+   margin-left: -24px;
+   width:105.5%;
+  }
+  html body div#jodedor.w3-row-padding.sig.container-fluid div.overlay.container div.wrapper form.form-wrapper fieldset.section.is-active{
+    margin-left:45px;
+  }
+  html body div#jodedor.w3-row-padding.sig.container-fluid div.overlay.container div.wrapper ul.steps{
+    margin-left: 45px;
+  }
+
+
+
+}
+
+
+
+  /* mediumLOW devices (custom) */
+@media (min-width: 768px) and (max-width:871.78px) {
+  html body div.parallax2 div.container-fluid div.wrapper div.row div#toptexts.col.col-xl-3.col-lg-3.col-sm-5.toptexts{
+    margin-top:30px;
+  }
+
+  html body div.parallax2 div.wrapper div.row div.col.col-8{
+    margin-top:25%;
+  }
+  html body div.parallax div.container-fluid div.wrapper div.row.sexi div.col{
+    margin-top:30px;
+  }
+
+  .atravesar{
+    left:38%;
+  }
+  #footerOfMine{
+
+    margin-top:-100px;
+
+  }
+   /*Cometarios carousel*/
+  /*joseJi*/
+  html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.joseJi{
+    margin-bottom: 170px;
+  }
+
+  /*albertoCo*/
+  html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.albertoCo h5{
+    font-size:10px;
+  }
+  html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.albertoCo p{
+    font-size:4px;
+  }
+
+
+
+
+ }
+
+  /* small devices */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+
+            html body div.parallax2 div.container-fluid div.wrapper div.row div#toptexts.col.col-lg-4.col-sm-5.toptexts{
+              margin-top: 35px;
+            }
+            /*TEXTO A*/
+            html body div.parallax div.container-fluid div.wrapper div.row.sexi div.col{
+              margin-top:25px;
+            }
+              /* TEXTO B*/
+              html body div.parallax2 div.container-fluid div.wrapper div.row div#toptexts.col.col-xl-3.col-lg-3.col-sm-5.toptexts{
+                margin-top:85px;
+              }
+
+
+            .atravesar{
+              left:36%;
+            }
+            .parallax, .parallax2 {
+              width:130%;
+            }
+            html body div.parallax div.container-fluid div.wrapper div.row.sexi div#toptexts2.col.col-lg-4.toptexts2{
+              margin-top:35px;
+            }
+            .sakura{
+              background-image: url(img/movilSmall.jpg);
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+
+
+   }
+  /* XXXTRA SMALL */
+  @media (max-width: 575.98px) {
+
+          html body div.parallax3 div.container-fluid div.wrapper div.wrapper div.row div.col.col-8 p{
+            font-size: 10px;
+          }
+          html body div.parallax3 div.container-fluid div.wrapper div.wrapper div.row div#moveMe.col.col-8{
+            margin-top:25%;
+          }
+          html body div.parallax2 div.wrapper div.row div.col.col-8{
+            margin-top:22%;
+          }
+          html body div.parallax2 div.wrapper div.row div.col.col-8 p{
+            font-size:12px;
+          }
+          html body div.parallax div.container-fluid div.wrapper div.row.sexi div.col{
+            margin-top:25px;
+
+          }
+          html body div.parallax2 div.container-fluid div.wrapper div.row div#toptexts.col.col-xl-3.col-lg-3.col-sm-5.toptexts.col-7{
+            margin-top:55px;
+          }
+
+
+          .atravesar{
+            left:20%;
+          }
+          #footerOfMine{
+            margin-top:0px;
+
+        }
+
+        .parallax, .parallax2 {
+          height: 1000px;
+          min-height: 660px;
+        }
+        html body div.parallax div.container-fluid div.wrapper div.row.sexi div#toptexts2.col.col-lg-4.toptexts2{
+          margin-top:-35px;
+        }
+
+        #footerOfMine{
+          width:130%;
+        }
+        header{
+          width:130%;
+        }
+        .sakura{
+          background-image: url(img/movilXtraSmall.jpg);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+     }
+
+     /*  Valores generales, sin queries, de referencia, puede ser eliminado.
+     .sakura{
+      background-image: url(img/movil.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }*/
+
+
+  /*
+     @media only screen and (max-device-width: 767.98px) {
+      .parallax {
+        background-attachment: scroll;
+      }
+
+    }*/
+    @media only screen and (max-device-width: 576.9px) {
+      .wide {
+        margin-left:8%;
+      }
+
+    }
+
+
+    /* Fading at scrolling effect */
+    .toptexts2 {
+      animation: fadeEffect 3s; /* fading effect takes 3s */
+   }
+
+   @keyframes fadeEffect { /* from 0 to full opacity */
+      from {opacity: 0;}
+      to {opacity: 1;}
+   }
+   .toptexts {
+    animation: fadeEffect 3s; /* fading effect takes 3s */
+ }
+
+
+
+
+ /* CAROUSEL PROCCESS*/
+ /* JOSEJI comment
+
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.joseJi h5{
+  font-size:22px;
+  color:#f7f7f7;
+   font-family: Helvetica;
+   font-weight: 900;
+}
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.joseJi p{
+  font-size:16px;
+  color:#f7f7f7;
+   font-family: Helvetica;
+   font-weight: 900;
+}
+/* AlbertoCo comment
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.albertoCo h5{
+  font-size:22px;
+  color:white;
+  font-weight: 900;
+   font-family: Helvetica;
+}
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.albertoCo p{
+  font-size:16px;
+  color:white;
+  font-weight: 900;
+   font-family: Helvetica;
+}
+
+/* felipeVi comment
+
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.felipeVi h5{
+  font-size:22px;
+  color:white;
+  font-weight: 900;
+  font-family: Helvetica;
+}
+html body div.container-fluid.d-none.d-md-block div#carouselExampleControls.carousel.slide div.carousel-inner div.carousel-item.active div.carousel-caption.felipeVi p{
+  font-size:16px;
+  color:white;
+  font-weight: 900;
+   font-family: Helvetica;
+}*/
+
+
+
+
+/* Font fixing*/
+html body div.parallax div.container-fluid div.wrapper div.row.sexi div#toptexts2.col.col-lg-4.toptexts2 h3{
+  font-family: Helvetica;
+}
+html body div.parallax div.container-fluid div.wrapper div.row.sexi div#toptexts2.col.col-lg-4.toptexts2 p{
+  font-family: Helvetica;
+}
+
+html body div.parallax2 div.container-fluid div.wrapper div.row div#toptexts.col.col-lg-4.toptexts p{
+  font-family: Helvetica;
+}
+
+html body div.parallax2 div.container-fluid div.wrapper div.row div#toptexts.col.col-lg-4.toptexts h3{
+  font-family: Helvetica;
+}
+/*miscelaneous container fix*/
+html body div.container-fluid.d-none.d-md-block{
+  margin-left:-15px;
+  width:104%;
+}
+html body div.container-fluid.d-none.d-xl-block{
+  margin-left:-15px;
+  width:104%;
+}
